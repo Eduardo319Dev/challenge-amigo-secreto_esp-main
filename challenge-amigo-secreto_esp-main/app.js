@@ -9,7 +9,12 @@ function agregarAmigo() {
     alert("por favor, inserte un nombre.");
     return;
   }
+  
+  amigos.push(valor); //agrega el valor al areglo de amigos
+  console.log("amigos actuales:",amigos);
 
-  console.log("valor ingresado:",valor);
+  //limpia el campo de entrada 
+  document.getElementById("amigo").value = "";
+
 }
 
